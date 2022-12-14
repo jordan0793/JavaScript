@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+      <h2>exercices en console.log</h2>
+        <script>
+
+          // Écrire un algorithme qui permet de recherche un élément dans un tableau d'entiers. Le tableau est entré dans l'algo. On demande de saisir un nombre et l'algo renvoie 0 si le nombre n'est pas dans le tableau et renvoie sa position si le nombre est dans le tableau.
+
+          // 
+
+          let tableauDeNombre = [20, 66, 48, 4, 15];
+          let indiceDuNombre = 0;
+          let entrerLeNombre = prompt ('Entrer le nombre');
+          
+          if ( entrerLeNombre*1 === tableauDeNombre) { // entrer le nombre en prompt est définit par défaut comme une chaine de caractère, en rajoutant *1  on le définit en nombre. on utilisera le strictement === pour que la valeur et le type correspondent.  
+              indiceDuNombre = (tableauDeNombre.indexOf(tableauDeNombre)) // On utilise .indexOf a partir du tableau pour chercher un élément du tableau correspondant au prompt rentrer. 
+          }
+          else {
+            indiceDuNombre = 10;
+          }
+        console.log (indiceDuNombre)
+        
+        </script>
+    '20'==20
+    </body>
+</html>

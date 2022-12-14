@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+      <h2>exercices en console.log</h2>
+        <script>
+        let tableauDeNombre = [10, 80, 48, 2, 50];
+          let i = 0;
+          let somme =0;
+          let moyenne = 0;
+          let petitNombre= tableauDeNombre[0]; // Subtilité : pour éviter de se tapper le 0 sur toute la chaine, on va directement selectionner le premier indice du tableau que l'on va ensuite comparrer au reste du tableau , ainsi il prendra la valeur souhaiter dans la condition if.
+          let grandNombre = 0; 
+          
+      
+         for (let i=0; i<tableauDeNombre.length; i++) { 
+        //    somme = somme+tableauDeNombre[i]; 
+        //    moyenne= somme/tableauDeNombre.length; 
+            if (tableauDeNombre[i] > grandNombre) {
+                grandNombre = tableauDeNombre[i];
+                
+                }
+            if (tableauDeNombre[i]< petitNombre) {
+                petitNombre=tableauDeNombre[i];
+            }
+
+        }
+        //  console.log (somme);
+        //  console.log (moyenne);
+         console.log (grandNombre);
+         console.log (petitNombre);
+        //  console.log (petitNombre);
+         
+        </script>
+    
+    </body>
+</html>

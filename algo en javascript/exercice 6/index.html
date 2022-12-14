@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+      <h2>exercices en console.log</h2>
+        <script>
+        // Faire un algorithme qui permet de compter le nombre de voyelles dans une phrase saisie par l'utilisateur. Le traitement sera fait à l'aide d'une fonction qui compte les voyelles
+        let phrase = prompt ('entrer phrase');
+        let voyelle = 0;
+        let lettre = "";
+
+        for (i=0; i<phrase.length; i++) {
+            lettre = phrase.substr (i,1);
+            console.log (lettre);
+            if (lettre == "a" || lettre == "e" || lettre == "i" || lettre == "o" || lettre == "u" || lettre == "y"  ){
+                voyelle = voyelle + 1;
+                
+                
+            }
+          }
+        
+          console.log ('au total il y a  '+ voyelle + ` voyelle(s)`)
+
+ 
+
+        // Code de Openclassromm pour dégager la ponctuation 
+        
+        
+//const getWordCount = (stringToTest) => {
+//     const wordArray = stringToTest.split(' ');
+//     return wordArray.length;
+// }
+
+// const getLetterCount = (stringToTest) => {
+//     const wordArray = stringToTest.split(' ');
+//     let totalLetters = 0;
+//     for (let word of wordArray) {
+//         word.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "");
+//         totalLetters += word.length;
+
+// explication Anthony : Bonjour Jordan, on utilise le replace, cela va donner bonjoujordan, ainsi le compteur va pouvoir compter que le nombre de lettre à l'intérieur de la phrase. 
+        
+//     }
+
+//     return totalLetters;
+// }
+         
+        </script>
+    
+    </body>
+</html>

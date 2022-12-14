@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+        <p>prix de ma pizza <span id="prix">21</span><span>€</span></p> <!--Attention : différence entre parseInt et Number , le Number sera utiliser pour transformer une chaîne de caractère en valeur nombre dans notre coce, mais dans notre code uniquement ! Si un utilisateur vienty a saisir a nombre sur le site , il sera considéré comme chaine de caractère pour sa transformation en nombre , on utilisera parseInt ( integer ) -->
+      
+        <h2>exercices en console.log</h2>
+
+
+
+
+
+        <script>
+        // Faire un algorithme qui permet de calculer la moyenne des notes des étudiants d'une classe. Le nombre d'étudiants n'est pas connu d'avance. On saisi donc des notes et on mets -1 pour terminer la saisie. Les notes doivent être comprises entre 0 et 20. Utilisez une fonction qui prend une liste de notes et qui retourne la moyenne.
+
+
+        let note = 0;
+        //let note = Number(prompt ('Entrer la note'));
+        let tableauDeNote = [];
+        let moyenne = 0;
+        let somme = 0;
+         // utiliser une fonction somme et ne pas donner une nouvelle valeur a "moyenne" dans la boucle, c'est une mauvaise pratique, non seulement un codeur qui passe va se triturer la tête pour savoir pourquoi moyenne devient une somme , mais en plus cela peut faire déconner le code , ne pas hésiter a déclarer une nouvelle variable "somme" puis une autre variable "moyenne" , on ne fait qu'une seule chose a la fois. 
+       
+
+        let i=0
+       while (note != -1) {
+            note=Number(prompt ('Entrer la note')); 
+            
+            // 1 : Il faut bien penser à rentrer la fonction prompt dans la boucle ! sinon , l'ordinateur ne sera pas quoi faire et la page continu de chercher indéfiniement et ne s'affiche pas. 
+            // 2 : la construction de Number est Number(). Ainsi on mettra tous le prompt entre parenthèse pour signifier que l'ensemble de la fonction sera converti en nombre.
+
+             console.log(note);
+         if ( note <=20 && note>=0) {
+                //tableauDeNote.push (note); // fonction créatrice de tableau ! fonction qui pousse "push" la note , dans le tableau , on lit de droite a gauche. cette fonction facilite l'integration de la note dans le tableau, Nous verrtonbs cela dans l'index 2, pour l'instant nous faisons avec l'ancienne méthode i++.
+                    
+                    tableauDeNote[i]=note;
+                    i++;
+                console.log (tableauDeNote);
+                
+                
+             }
+             else {
+                console.log('Veuillez rentrer une note entre 0 et 20'); 
+                
+             }
+            }
+
+            //-----calcul de moyenne en partie 2 avec une boucle for car le tableau.length sera définie une fois la boucle brisée par -1.
+
+
+            // console.log("tableau final "+ tableauDeNote); 
+            // console.log('la moyenne est de : '+ (somme/tableauDeNote.length));
+             
+             // somme = somme + tableauDeNote.push (note);
+                // somme = somme + tableauDeNote.push (note);
+                // console.log ('la somme est de :' +somme);
+        
+
+        
+         
+        </script>
+    
+    </body>
+</html>

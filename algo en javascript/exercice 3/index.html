@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+      <h2>exercices en console.log</h2>
+        <script>
+
+          let tableauDeNombre = [10, 80, 70, 40, 50];
+          let i = 0;
+          let somme =0;
+          let moyenne = 0;
+          let petitNombre = 0;
+          let GrandNombre = 0; // Obligation de déclaré des valeur a 0 pour, pour les définir en nombre.
+          
+      
+         for (let i=0; i<tableauDeNombre.length; i++) { 
+           somme = somme+tableauDeNombre[i]; // premier tour : somme = 0, et tableau = 10 , donc le résultat au premier tout est 10. 10 vient remplacer la somme car on l'a déclaré ainsi 0= 0+10, 10=10+80 etc .... 
+           moyenne= somme/tableauDeNombre.length; // Moyenne effectué à partir de la détermination du nombre d'indice , c'est la fonction .length
+           console.log (somme); // aide a l'affichage et compréhension , équivalent au pas a pas algobox
+           
+         
+         }
+         console.log (somme);
+         console.log (moyenne);
+         console.log (Math.min.apply(null, tableauDeNombre)); 
+         console.log (Math.max.apply(null, tableauDeNombre));// en ayant cherché , on se rend compte qu'il y a une différence a l'appel de cette fonction pour le tableau, on va utiliser apply, null permet de dire que ce qu'on cherche n'est pas défini, on insère le deuxième argument de recherche qui est le tableau , ainsi cherche le plus grand nombre dans le tableau imprécisement , donc a défaut dans tous le tableau.
+
+
+         
+         
+         
+        
+        </script>
+    
+    </body>
+</html>

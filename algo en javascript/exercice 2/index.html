@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+      <h2>exercices en console.log</h2>
+        <script>
+
+                                       // Méthode Algobox
+          
+          let phrase = "constitution"; // chaine de caractère définit
+          let nouvellePhrase =""; // chaîne de caractère non défini
+          let lettre=""; // chaîne de caractère non défini
+          
+          for (i= 0; i<phrase.length; i++) { // Définition de des limites de la boucle
+            lettre=phrase[i]; // la variable lettre prend la valeur de l'indice de phrase
+            console.log(lettre); // a chaque tour de boucle , affiche l'indice i=0.
+            nouvellePhrase  = lettre+nouvellePhrase ; // Nouvelle est un nouveau tableau , on vient injecter la lettre seule, puis a la deuxiàme boucle , la deuxième lettre pousse la première lettre a la 2 eme place du tableau "oc" puis "noc"
+            console.log (nouvellePhrase); // la phrase à l'envers.
+          }
+                                    // Méthode pré-conçu Javascript
+          
+          // split(): cette méthode divisera la chaîne en un tableau de caractères.
+          // reverse(): cette méthode inverse tous les éléments d’un tableau.
+          // join(): Cette méthode joint tous les éléments du tableau pour créer une chaîne de caractères.
+          
+          // Script pour inverser une chaîne de caractère:
+          // let s = 'WayToLearnX';
+          // let rev = s.split('').reverse().join('');
+          // console.log(rev);
+
+          // let text = 'return that sentence';
+          // let return = text.split('').reverse().join('');
+          // console.log(return);
+
+          
+
+
+
+          
+
+
+        </script>
+    
+    </body>
+</html>

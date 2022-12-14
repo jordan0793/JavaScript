@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8"/>
+      
+      <title>Algorithmes</title>
+    </head>
+
+    <body>
+        <p>prix de ma pizza <span id="prix">21</span><span>€</span></p> <!--Attention : différence entre parseInt et Number , le Number sera utiliser pour transformer une chaîne de caractère en valeur nombre dans notre coce, mais dans notre code uniquement ! Si un utilisateur vienty a saisir a nombre sur le site , il sera considéré comme chaine de caractère pour sa transformation en nombre , on utilisera parseInt ( integer ) -->
+      
+        <h2>exercices en console.log</h2>
+
+
+
+
+
+        <script>
+        // Faire un algorithme qui permet de calculer la moyenne des notes des étudiants d'une classe. Le nombre d'étudiants n'est pas connu d'avance. On saisi donc des notes et on mets -1 pour terminer la saisie. Les notes doivent être comprises entre 0 et 20. Utilisez une fonction qui prend une liste de notes et qui retourne la moyenne.
+
+
+        let note = 0;
+        let tableauDeNote = [];
+        let moyenne = 0;
+        let somme = 0;
+         
+        let i=0
+       while (note != -1) {
+            note=Number(prompt ('Entrer la note')); 
+
+         if ( note <=20 && note>=0) {
+                tableauDeNote.push(note);
+                // console.log (tableauDeNote);
+                
+                
+             }
+             else {
+                console.log('Veuillez rentrer une note entre 0 et 20'); 
+                
+             }
+             console.log (tableauDeNote);
+            }
+
+            for (i=0;  i<tableauDeNote.length; i++) {
+                somme=somme+tableauDeNote[i];
+                moyenne= somme/tableauDeNote.length;
+                           
+            }
+            console.log ('la somme est de '+somme);
+            console.log ('la moyenne est de '+moyenne); 
+
+            
+
+        
+         
+        </script>
+    
+    </body>
+</html>
